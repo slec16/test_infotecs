@@ -1,0 +1,254 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.main {
+    flex: 1; 
+}
+
+/*----header---*/
+
+.header {
+    background: #F8F6F7 url('./images/header-bg.png');
+    
+ 
+}
+
+.header .container {
+    position: relative;
+    padding: 30px 0 130px;
+    overflow: hidden;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navigation li:not(:last-child) {
+    margin-right: 28px;
+
+}
+
+.navigation a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.navigation a:hover {
+    color: #00BF78;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+}
+
+.phone a {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.phone span {
+    font-size: 11px;
+}
+
+.hero {
+    max-width: 540px;
+    position: relative; 
+    z-index: 2;
+}
+
+.p1-hero {
+    font-size: 48px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 17px;
+}
+
+.p2-hero {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 59px;
+
+}
+
+.btn-hero {
+    border-radius: 24px;
+    background: #FB9475;
+    padding: 17px 30px;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffff;
+
+}
+
+.btn-hero:hover {
+    opacity: 50%;
+}
+
+.social {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    list-style: none;
+}
+
+.social li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.social a:hover {
+    opacity: 50%;
+}
+
+.girl {
+    width: 472px;
+    height: 472px;
+    border-radius: 50%;
+    background-color: #FB9475;
+    position: absolute;
+    right: 90px;
+    bottom: -110px;
+    
+
+}
+
+.girl-img {
+    position: absolute;
+    bottom: 110px;
+    right: 0;
+}
+
+/*---main---*/
+
+.h2-about {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 32px 0;
+}
+
+.main .container .about-us {
+    padding: 100px 0 100px;
+}
+
+.container-about {
+    display: flex;
+}
+
+.text-about {
+    max-width: 570px;
+    margin-right: 95px;
+}
+
+.text1-about {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.text2-about {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 540px;
+    line-height: 26px;
+}
+
+.video {
+    width: 445px;
+    height: 290px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('./images/play.png') no-repeat center;
+    z-index: 3;
+}
+
+.video::after {
+    content: 'Короткое видео о нас';
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    z-index: 3;
+    top: 168px;
+    color: #F8F6F7;
+}
+
+.video:hover::before {
+    transform: scale(1.2) translateX(-50%);;
+}
+
+.video img {
+    object-fit: contain;
+
+} 
