@@ -253,8 +253,38 @@ body {
 
 } 
 
-.benefits {
-    font-size: 16px;
+.main .container .benefits {
+    padding: 0 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.benefit-frame {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 350px;
+}
+
+.benefit-image {
+    max-width: 48px;
+    height: 48px;
+    margin-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.benefit-title {
     font-weight: 600;
-    /*todo benefits*/
+    font-size: 18px;
+    margin: 0 0 12px;
+}
+
+.benefit-text {
+    max-width: 296px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0;
 }
