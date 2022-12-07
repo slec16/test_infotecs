@@ -8,6 +8,7 @@ html {
 
 html, body { 
     height: 100%;
+    min-width: 320px;
 }
 
 a {
@@ -17,6 +18,7 @@ a {
 body {
     font-family: $font;
     font-size: 16px;
+    
 }
 .container{
     max-width: 1100px;
@@ -29,3 +31,4 @@ body {
     flex-direction: column;
     height: 100%;
 }
+

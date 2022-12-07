@@ -23,8 +23,8 @@
 /*----header---*/
 
 .header {
-    background-image: url('/src/images/header-bg.png');
-    background-color: #F8F6F7;
+    background: #F8F6F7 url('../images/header-bg.png');
+    
     
     .container{
         position: relative;
@@ -83,8 +83,41 @@
     }
     
   
+    &__hero {
+        max-width: 540px;
+        position: relative; 
+        z-index: 2;
+        
+    }
+    
+    &__p1 {
+        font-size: 48px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 17px;
+    }
+    
+    &__p2 {
+        font-size: 20px;
+        font-weight: 400;
+        color: #333;
+        margin-bottom: 59px;
+    
+    }
 
+    &__btn {
+        border-radius: 24px;
+        background: #FB9475;
+        padding: 17px 30px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #ffff;
+    }
  
+    &__btn:hover {
+        opacity: 50%;
+    }
+
     &__social {
         position: absolute;
         right: 0;
@@ -96,84 +129,29 @@
     &__social li:not(:last-child) {
         margin-bottom: 20px;
     }
-    
+    &__social a:hover {
+        opacity: 50%;
+    }
+
+    &__girl {
+        width: 472px;
+        height: 472px;
+        border-radius: 50%;
+        background-color: #FB9475;
+        position: absolute;
+        right: 90px;
+        bottom: -110px;
+    }
+    &__girl-img {
+        position: absolute;
+        bottom: 110px;
+        right: 0;
+    }
 }
 
 
 
 
-
-.hero {
-    max-width: 540px;
-    position: relative; 
-    z-index: 2;
-}
-
-.p1-hero {
-    font-size: 48px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 17px;
-}
-
-.p2-hero {
-    font-size: 20px;
-    font-weight: 400;
-    color: #333;
-    margin-bottom: 59px;
-
-}
-
-.btn-hero {
-    border-radius: 24px;
-    background: #FB9475;
-    padding: 17px 30px;
-
-    font-size: 14px;
-    font-weight: 500;
-    color: #ffff;
-
-}
-
-.btn-hero:hover {
-    opacity: 50%;
-}
-
-/*
-.social {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0;
-    list-style: none;
-}
-*/
-.social li:not(:last-child) {
-    margin-bottom: 20px;
-}
-
-.social a:hover {
-    opacity: 50%;
-}
-
-.girl {
-    width: 472px;
-    height: 472px;
-    border-radius: 50%;
-    background-color: #FB9475;
-    position: absolute;
-    right: 90px;
-    bottom: -110px;
-    
-
-}
-
-.girl-img {
-    position: absolute;
-    bottom: 110px;
-    right: 0;
-}
 
 /*---main---*/
 
@@ -227,7 +205,7 @@
     top: 100px;
     left: 50%;
     transform: translateX(-50%);
-    background: url('./images/play.png') no-repeat center;
+    background: url('../images/play.png') no-repeat center;
     z-index: 3;
 }
 
@@ -560,7 +538,7 @@
     /*background-color: #F8F6F7;*/
     align-items: center;
     border-width: 0px;
-    background: url("./images/left.png") no-repeat center;
+    background: url("../images/left.png") no-repeat center;
  
     width: 40px;
     height: 40px;
@@ -568,13 +546,10 @@
 
 .btn-dir2 {
     border-radius: 50%;
-    
-    
+    /*background-color: #F8F6F7;*/
+    align-items: center;
     border-width: 0px;
-    background-image: url("/src/images/right.png");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-
+    background: url("../images/right.png") no-repeat center;
  
     width: 40px;
     height: 40px;
@@ -793,5 +768,58 @@
     font-size: 14px;
     font-weight: 400;
     color: #333;
+}
+
+
+
+
+/* Large Devices, Wide Screens */ 
+@media only screen and (max-width: 1280px) { 
+    
+
+
+} 
+/* Medium Devices, Desktops */ 
+@media only screen and (max-width: 992px) { 
+} 
+/* Small Devices, Tablets */ 
+@media only screen and (max-width: 768px) {
+    .header__top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .header__phone {
+        text-align: center;
+    }
+    .header__logo{
+        margin: auto;
+    }
+    .header__navigation ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__navigation li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    html, body { 
+        height: 100%;
+        width: 100%;
+        margin-right: 0px;
+    }
+    
+    .container{
+        max-width: 100%;
+        margin: 0;
+        /*padding: 0 15px;*/
+    }
+    
+
+} 
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width: 480px) { 
+} 
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width: 320px) { 
 }
 
