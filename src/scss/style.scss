@@ -1,6 +1,7 @@
 @import './vendors';
 @import './varibles';
 @import './common';
+@import './mixins';
 
 
 
@@ -279,16 +280,17 @@
 }
 
 /* todo services*/
-.services1 {
+.services {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 48px;
+   // margin-bottom: 48px;
+    
 }
-
+/*
 .services1 .services-frame:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .services2 {
@@ -299,16 +301,17 @@
 }
 
 .services2 .services-frame {
-    margin-right: 30px;
+    margin-right: 25px;
 }
-
+*/
 .services-frame {
     display: flex;
     flex-direction: column;
     text-align: left;
     max-width: 350px;
+    margin-right: 15px;
+    margin-bottom: 48px;
 }
-
 
 
 .services-image {
@@ -439,17 +442,15 @@
     margin: 0;
 }
 
-
-
-.main .masters .container {
-    padding: 80px 0 80px 0;
-    max-width: 1100px;    
-}
-
-.masters {
+.masters-wrapper {
     background-color: #F8F6F7;
 }
 
+
+.main .container .masters  {
+    padding: 80px 0 80px 0;
+    
+}
 
 .master-title {
     font-size: 48px;
@@ -772,54 +773,4 @@
 
 
 
-
-/* Large Devices, Wide Screens */ 
-@media only screen and (max-width: 1280px) { 
-    
-
-
-} 
-/* Medium Devices, Desktops */ 
-@media only screen and (max-width: 992px) { 
-} 
-/* Small Devices, Tablets */ 
-@media only screen and (max-width: 768px) {
-    .header__top {
-        flex-direction: column;
-        gap: 30px;
-    }
-    .header__phone {
-        text-align: center;
-    }
-    .header__logo{
-        margin: auto;
-    }
-    .header__navigation ul{
-        flex-direction: column;
-        align-items: center;
-    }
-    .header__navigation li:not(:last-child) {
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-    html, body { 
-        height: 100%;
-        width: 100%;
-        margin-right: 0px;
-    }
-    
-    .container{
-        max-width: 100%;
-        margin: 0;
-        /*padding: 0 15px;*/
-    }
-    
-
-} 
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width: 480px) { 
-} 
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width: 320px) { 
-}
 
