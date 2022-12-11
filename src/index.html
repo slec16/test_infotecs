@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Saloon</title> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!--
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">>
+-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 
 <body>
@@ -17,44 +25,44 @@
         <header class="header">
             <div class="container">
 
-                <div class="header-top">
-                    <a href="/" class="logo">Мир красоты</a>
-                    <nav class="navigation">
+                <div class="header__top">
+                    <a href="/" class="header__logo">Мир красоты</a>
+                    <nav class="header__navigation">
                         <ul>
-                            <li><a href="#services">Услуги и цены</a></li>
-                            <li><a href="#masters">Мастера</a></li>
-                            <li><a href="#portfolio">Наши работы</a></li>
-                            <li><a href="#about">О нас</a></li>
-                            <li><a href="#contacts">Контакты</a></li>
+                            <li><a class="smooth-scroll" href="#services">Услуги и цены</a></li>
+                            <li><a class="smooth-scroll" href="#masters">Мастера</a></li>
+                            <li><a class="smooth-scroll" href="#portfolio">Наши работы</a></li>
+                            <li><a class="smooth-scroll" href="#about">О нас</a></li>
+                            <li><a class="smooth-scroll" href="#contacts">Контакты</a></li>
                         </ul>
                     </nav>
-                    <div class="phone">
+                    <div class="header__phone">
                         <a href="tel:8(499)686-17-62">8 (499) 686-17-62</a>
                         <span>с 10.00 до 19.00 без выходных</span>
                     </div>
                 </div>
 
-                <div class="hero">
-                    <p class="p1-hero">
+                <div class="header__hero">
+                    <p class="header__p1">
                         Создай свой образ вместе с нами
                     </p>
-                    <p class="p2-hero">
+                    <p class="header__p2">
                         Идеальный образ за 60 минут
                     </p>
 
-                    <button class="btn-hero">
+                    <button class="header__btn">
                         Записаться онлайн
                     </button>
                 </div>
                 
-                <div class="social">
+                <div class="header__social">
                     <li><a href="#"><img src="./images/vk.png" alt="vk"></a></li>
                     <li><a href="#"><img src="./images/inst.png" alt="inst"></a></li>
                     <li><a href="#"><img src="./images/yt.png" alt="you"></a></li>
                 </div>
 
-                <div class="girl">
-                    <img class="girl-img" src="./images/girl.png" alt="girl">
+                <div class="header__girl">
+                    <img class="header__girl-img" src="./images/girl.png" alt="girl">
                 </div>
                   
             </div>
@@ -62,12 +70,12 @@
 
         <main class="main">
             <div class="container">
-                <div class="about-us">
+                <div id="about" class="about-us">
                     <h2 class="h2-about">О салоне</h2>
                     <div class="container-about">
                         <div class="text-about">
                             <p class="text1-about">Мир красоты - это уютный салон в самом центре города. Здесь работают профессиональные визажисты, стилисты и мастера татуажа</p>
-                            <p class="text2-about">Красота и хороший уход никогда не выходят из моды. Мы приглашаем Вас в место, где гармония обретает форму, а внешность становится отражением внутреннего мира. Новая жизнь начинается с небольших изменений. Мы помогаем нашим клиентам воплотить их индивидуальность во внешнем облике. Мы создаем стиль – вместе с Вами и для Вас.</p>
+                            <p class="expandable-text">Красота и хороший уход никогда не выходят из моды. Мы приглашаем Вас в место, где гармония обретает форму, а внешность становится отражением внутреннего мира. Новая жизнь начинается с небольших изменений. Мы помогаем нашим клиентам воплотить их индивидуальность во внешнем облике. Мы создаем стиль – вместе с Вами и для Вас.</p>
                         </div>
                         <div class="video">
                             <img src="./images/video.png" alt=".">
@@ -100,7 +108,7 @@
             <div class="container">
                 <div class="popular-services">
                     <h2 class="services-title">Популярные услуги</h2>
-                    <div class="services1">
+                    <div class="services">
                         <div class="services-frame">
                             <img class="services-image" src="./images/services.png">
                             <p class="services-frame-title">Маникюр</p>
@@ -119,8 +127,8 @@
                             <p class="services-text">Выполняется в одноразовых перчатках наполненных увлажняющим лосьоном.</p>
                             <button class="services-btn">Записаться</button>
                         </div>
-                    </div>
-                    <div class="services2">
+                    
+                    
                         <div class="services-frame">
                             <img class="services-image" src="./images/services.png">
                             <p class="services-frame-title">Педикюр</p>
@@ -138,134 +146,139 @@
             </div>
 
             <div class="container">
-                <div class="price">
+                <div id="services" class="price">
                     <h2 class="price-title">Услуги и цены</h2>
-                    <nav class="price-menu">
-                        <ul>
-                            <li><a href="#">Стрижка и укладка</a></li>
-                            <li><a href="#">Косметология</a></li>
-                            <li><a href="#">Маникюр и педикюр</a></li>
-                            <li><a href="#">Макияж</a></li>
-                            <li><a href="#">Брови и ресницы</a></li>
-                            <li><a href='#'>Массаж</a></li>
-                        </ul>
-                    </nav>
+                        <nav class="price-menu">
+                            <ul class="tabs-links">
+                                <li>Стрижка и укладка</li>
+                                <li>Косметология</li>
+                                <li>Маникюр и педикюр</li>
+                                <li>Макияж</li>
+                                <li>Брови и ресницы</li>
+                                <li>Массаж</li>
+                            </ul>
+                        </nav>
 
-                    <div class="price-services">
-                        <div class="price-services-unit">
-                            <div class="price-block">
-                                <p class="price-name">Женская стрижка</p>
-                                <p class="coast">1200 ₽</p>
+                        <div class="price-services">
+                            <div class="price-services-unit">
+                                <div class="price-block">
+                                    <p class="price-name">Женская стрижка</p>
+                                    <p class="coast">1200 ₽</p>
+                                </div>
+                                <p class="price-text">Короткие волосы</p>
                             </div>
-                            <p class="price-text">Короткие волосы</p>
-                        </div>
-                        <div class="price-services-unit">
-                            <div class="price-block">
-                                <p class="price-name">Стрижка бороды и усов</p>
-                                <p class="coast">1200 ₽</p>
+                            <div class="price-services-unit">
+                                <div class="price-block">
+                                    <p class="price-name">Стрижка бороды и усов</p>
+                                    <p class="coast">1200 ₽</p>
+                                </div>
+                                <p class="price-text">Короткие волосы</p>
                             </div>
-                            <p class="price-text">Короткие волосы</p>
-                        </div>
-                        <div class="price-services-unit">
-                            <div class="price-block">
-                                <p class="price-name">Мужская стрижка</p>
-                                <p class="coast">1200 ₽</p>
+                            <div class="price-services-unit">
+                                <div class="price-block">
+                                    <p class="price-name">Мужская стрижка</p>
+                                    <p class="coast">1200 ₽</p>
+                                </div>
+                                <p class="price-text">Короткие волосы</p>
                             </div>
-                            <p class="price-text">Короткие волосы</p>
-                        </div>
-                        <div class="price-services-unit">
-                            <div class="price-block">
-                                <p class="price-name">Экспресс укладка</p>
-                                <p class="coast">1200 ₽</p>
+                            <div class="price-services-unit">
+                                <div class="price-block">
+                                    <p class="price-name">Экспресс укладка</p>
+                                    <p class="coast">1200 ₽</p>
+                                </div>
+                                <p class="price-text">Короткие волосы</p>
                             </div>
-                            <p class="price-text">Короткие волосы</p>
-                        </div>
-                        <div class="price-services-unit">
-                            <div class="price-block">
-                                <p class="price-name">Детский Стиль</p>
-                                <p class="coast">1200 ₽</p>
+                            <div class="price-services-unit">
+                                <div class="price-block">
+                                    <p class="price-name">Детский Стиль</p>
+                                    <p class="coast">1200 ₽</p>
+                                </div>
+                                <p class="price-text">Короткие волосы</p>
                             </div>
-                            <p class="price-text">Короткие волосы</p>
-                        </div>
-                        <div class="price-services-unit">
-                            <div class="price-block">
-                                <p class="price-name">Укладка дневная</p>
-                                <p class="coast">1200 ₽</p>
+                            <div class="price-services-unit">
+                                <div class="price-block">
+                                    <p class="price-name">Укладка дневная</p>
+                                    <p class="coast">1200 ₽</p>
+                                </div>
+                                <p class="price-text">Короткие волосы</p>
                             </div>
-                            <p class="price-text">Короткие волосы</p>
-                        </div>
-                        <div class="price-services-unit">
-                            <div class="price-block">
-                                <p class="price-name">Креативный Стиль</p>
-                                <p class="coast">1200 ₽</p>
+                            <div class="price-services-unit">
+                                <div class="price-block">
+                                    <p class="price-name">Креативный Стиль</p>
+                                    <p class="coast">1200 ₽</p>
+                                </div>
+                                <p class="price-text">Короткие волосы</p>
                             </div>
-                            <p class="price-text">Короткие волосы</p>
-                        </div>
-                        <div class="price-services-unit">
-                            <div class="price-block">
-                                <p class="price-name">Прическа вечерняя (свадебная)</p>
-                                <p class="coast">1200 ₽</p>
+                            <div class="price-services-unit">
+                                <div class="price-block">
+                                    <p class="price-name">Прическа вечерняя (свадебная)</p>
+                                    <p class="coast">1200 ₽</p>
+                                </div>
+                                <p class="price-text">Короткие волосы</p>
                             </div>
-                            <p class="price-text">Короткие волосы</p>
                         </div>
-                    </div>
 
+
+      
 
                 </div>
             </div>
-             <div class="masters">
-                <div class="container">
-                
-                    <h2 class="master-title">Мастера</h2>
-                    <p class="maters-text">Дружная команда настоящих профессионалов</p>
-                    <div class="master-group">
-                        <div class="master-card">
-                            <img class="master-image" src="./images/master_irina.png">
-                            <p class="master-name">Краснова Ирина</p>
-                            <p class="master-spec">Мастер ногтевого сервиса</p>
-                            <p class="master-exp">опыт работы 5 лет</p>
-                        </div>
-                        <div class="master-card">
-                            <img class="master-image" src="./images/master_janna.png">
-                            <p class="master-name">Калилова Жанна</p>
-                            <p class="master-spec">Визажист-стилист</p>
-                            <p class="master-exp">опыт работы 5 лет</p>
-                        </div>
-                        <div class="master-card">
-                            <img class="master-image" src="./images/master_alina.png">
-                            <p class="master-name">Киселева Алина</p>
-                            <p class="master-spec">Парикмахер</p>
-                            <p class="master-exp">опыт работы 5 лет</p>
-                        </div>
-                        <div class="master-card">
-                            <img class="master-image" src="./images/master_elena.png">
-                            <p class="master-name">Иванова Елена</p>
-                            <p class="master-spec">Мастер ногтевого сервиса</p>
-                            <p class="master-exp">опыт работы 5 лет</p>
-                        </div>
 
+            <div class="masters-wrapper"> 
+                <div class="container">
+                    <div id="masters" class="masters">
+                        <h2 class="master-title">Мастера</h2>
+                        <p class="maters-text">Дружная команда настоящих профессионалов</p>
+                        <div class="master-group">
+                            <div class="master-card">
+                                <img class="master-image" src="./images/master_irina.png">
+                                <p class="master-name">Краснова Ирина</p>
+                                <p class="master-spec">Мастер ногтевого сервиса</p>
+                                <p class="master-exp">опыт работы 5 лет</p>
+                            </div>
+                            <div class="master-card">
+                                <img class="master-image" src="./images/master_janna.png">
+                                <p class="master-name">Калилова Жанна</p>
+                                <p class="master-spec">Визажист-стилист</p>
+                                <p class="master-exp">опыт работы 5 лет</p>
+                            </div>
+                            <div class="master-card">
+                                <img class="master-image" src="./images/master_alina.png">
+                                <p class="master-name">Киселева Алина</p>
+                                <p class="master-spec">Парикмахер</p>
+                                <p class="master-exp">опыт работы 5 лет</p>
+                            </div>
+                            <div class="master-card">
+                                <img class="master-image" src="./images/master_elena.png">
+                                <p class="master-name">Иванова Елена</p>
+                                <p class="master-spec">Мастер ногтевого сервиса</p>
+                                <p class="master-exp">опыт работы 5 лет</p>
+                            </div>
+
+                        </div>
+                    
                     </div>
-                
                 </div>
             </div>
 
             <div class="container">
-                <div class="works">
+                <div id="portfolio" class="works">
                     <div class="works-up">
                         <h2 class="works-title">Наши работы</h2>
-                        <div clas="works-button">
-                            <!--<button class="btn-dir"><img class="btn-img" src="./images/left.png"></button>
-                            <button class="btn-dir"><img class="btn-img" src="./images/right.png"></button>-->
-                            
+                        <div clas="works-button"> 
                             <button class="btn-dir1"></button>
                             <button class="btn-dir2"></button>
+                            
                         </div>
                     </div>
                     <div class="works-image-block">
-                        <img class="works-image" src="./images/lips.png">
-                        <img class="works-image" src="./images/makeup.png">
-                        <img class="works-image" src="./images/nails.png">
-                        <img class="works-image" src="./images/hair.png">
+                        <div><a data-fancybox="gallery" href="./images/lips.png"><img class="works-image" src="./images/lips.png"></a></div>
+                        <div><a data-fancybox="gallery" href="./images/makeup.png"><img class="works-image" src="./images/makeup.png"></a></div>
+                        <div><a data-fancybox="gallery" href='./images/nails.png'><img class="works-image" src="./images/nails.png"></a></div>
+                        <div><a data-fancybox="gallery" href="./images/hair.png"><img class="works-image" src="./images/hair.png"></a></div>
+
+           
+
                     </div>
                 </div>
             </div>
@@ -284,7 +297,7 @@
                 </div>
             </div>
 
-            <div class="contacts">
+            <div id="contacts" class="contacts">
                 <div class="container">
                     <div class="link">
                         <h2 class="link-title">Контакты</h2>
@@ -322,17 +335,23 @@
                 </div>
                 <nav class="footer-navigation">
                     <ul>
-                        <li><a href="#services">Услуги и цены</a></li>
-                        <li><a href="#masters">Мастера</a></li>
-                        <li><a href="#portfolio">Наши работы</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a class="smooth-scroll" href="#services">Услуги и цены</a></li>
+                        <li><a class="smooth-scroll" href="#masters">Мастера</a></li>
+                        <li><a class="smooth-scroll" href="#portfolio">Наши работы</a></li>
+                        <li><a class="smooth-scroll" href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
         </footer>
     </div>
 
+    <script src="../js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script src="../js/slide.js"></script>
 
 </body>
 </html>

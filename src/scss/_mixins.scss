@@ -1,0 +1,169 @@
+/* Large Devices, Wide Screens */ 
+@media only screen and (max-width: 1280px) { 
+    
+
+
+} 
+/* Medium Devices, Desktops */ 
+@media only screen and (max-width: 992px) { 
+} 
+/* Small Devices, Tablets */ 
+@media only screen and (max-width: 768px) {
+    .header__top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .header__phone {
+        align-items: center;
+    }
+    .header__logo{
+        margin: auto;
+    }
+    .header__navigation ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header__navigation li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .header__social {
+        visibility: hidden;
+    }
+
+    
+    .header__girl {
+        visibility: hidden;
+    }
+
+    .benefit-text {
+        display: none;
+    }
+
+    .works {
+        display: none;
+    }
+
+    .container-about {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+//     .about-us {
+// //        margin-left: 15px;
+//     }
+
+    .video {
+        max-width: 100%;
+    }
+
+    .text-about{
+        max-width: 100%;
+    }
+
+    html, body { 
+        height: 100%;
+        width: 100%;
+        margin-right: 0px;
+    }
+    
+    .container{
+        max-width: 100%;
+        margin: 0;
+        /*padding: 0 15px;*/
+    }
+    
+    .main .container .popular-services {
+        padding: 0 0 100px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .price-menu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .price-menu li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .services {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+       // flex-wrap: nowrap;
+        justify-content: flex-start;
+        margin-bottom: 48px;
+       // margin-left: 15px;
+    }
+
+
+
+    // .price-services {
+    //     margin-left: 15px;
+    // }
+    
+    .price-services-unit {
+        
+        width: 100%px;
+        
+    }
+
+    
+
+    // .masters {
+    //     display: flex;
+    //     flex-direction: column;
+    
+    // }
+
+ 
+    .master-group {
+        flex-wrap: wrap;
+        margin-left: 10px;
+    }
+    
+    .brends-image-block {
+        flex-wrap: wrap;
+    }
+    .brends-image {
+        max-width: 160px;
+        margin-bottom: 10px;
+    }
+
+    .main .contacts .container {
+        flex-wrap: wrap;
+    }
+
+    .link {
+        margin-bottom: 10px;
+    }
+    
+    .note {
+        max-width: 100%;
+    }
+
+
+    .footer-navigation ul {
+        flex-direction: column;
+    }
+    
+    .footer-navigation li:not(:last-child) {
+        margin-bottom: 10px;
+    
+    }
+    
+} 
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width: 480px) { 
+} 
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width: 320px) { 
+}
