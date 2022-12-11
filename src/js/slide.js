@@ -9,8 +9,8 @@ $(document).ready(function(){
     });
 });
 
-Fancybox.show(gallery, {
-    Image: {
+// Fancybox.show(gallery, {
+//     Image: {
 
-    },
-  });
+//     },
+//   });
