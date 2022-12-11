@@ -183,11 +183,18 @@
     margin-top: 0;
 }
 
-.text2-about {
+.expandable-text {
     font-size: 16px;
     font-weight: 400;
     max-width: 540px;
     line-height: 26px;
+}
+
+.expandable-btn {
+    text-decoration: none;
+    color: #00BF78;
+    border-style: none;
+    background-color: #ffff;
 }
 
 .video {
@@ -369,6 +376,8 @@
     margin-bottom: 57px;
 }
 
+
+
 .price ul {
     list-style: none;
     padding: 0;
@@ -381,22 +390,26 @@
 
 }
 
-.price a {
+.price li {
     font-size: 14px;
     font-weight: 500;
     color: #333;
 }
 
-.price a:hover {
+.price li:hover {
     color: #00BF78;
 }
 
+.tabs-link:active {
+    color:#00BF78
+}
 
 .price-services {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+   
 }
 
 
@@ -574,11 +587,12 @@
 
 
 .container .works .works-image-block {
-    max-width: 1440px;
+    //max-width: 1440px;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     
-    margin-left: -11.8%;
+    //margin-left: -11.8%;
 }
 
 .works-image {
