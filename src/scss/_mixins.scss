@@ -10,11 +10,13 @@
 /* Small Devices, Tablets */ 
 @media only screen and (max-width: 768px) {
     .header__top {
+        display: flex;
         flex-direction: column;
         gap: 30px;
     }
     .header__phone {
         align-items: center;
+        
     }
     .header__logo{
         margin: auto;
@@ -29,27 +31,46 @@
         margin-bottom: 15px;
     }
     
+
+    .header__hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__p1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 40px;
+    }
+
     .header__social {
         visibility: hidden;
     }
 
     
+    
     .header__girl {
         visibility: hidden;
     }
 
-    .benefit-text {
-        display: none;
-    }
+    
+   .benefit-text {
+    display: none;
+   }
 
-    .works {
-        display: none;
-    }
+    
 
     .container-about {
         display: flex;
         flex-direction: column;
         
+    }
+    
+    
+    .text-about {
+        margin-left: 10px;
     }
 
 //     .about-us {
@@ -81,12 +102,14 @@
         max-width: 100%;
         display: flex;
         flex-direction: column;
+        margin-left: 10px;
     }
 
     
     .price-menu ul{
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        
     }
     
     .price-menu li:not(:last-child) {
@@ -118,17 +141,34 @@
 
     
 
-    // .masters {
-    //     display: flex;
-    //     flex-direction: column;
-    
-    // }
 
- 
+    
     .master-group {
         flex-wrap: wrap;
-        margin-left: 10px;
+    
+        margin-left: 30px;
     }
+
+    .master-exp{
+        padding-bottom: 20px;
+    }
+
+    // .master-card {
+    //     align-items: center;
+    // }
+
+
+
+    
+
+    
+
+    .works {
+        margin-left: 40px;
+    }
+
+
+
     
     .brends-image-block {
         flex-wrap: wrap;
@@ -140,10 +180,13 @@
 
     .main .contacts .container {
         flex-wrap: wrap;
+        
     }
 
     .link {
         margin-bottom: 10px;
+        margin-left: 60px;
+        align-items: center;
     }
     
     .note {

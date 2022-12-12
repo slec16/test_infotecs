@@ -5,12 +5,21 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows: true,
         prevArrow: '.btn-dir1',
-        nextArrow: '.btn-dir2'
+        nextArrow: '.btn-dir2',
+
+        responsive: [
+          
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+
     });
+    
+        
 });
 
-// Fancybox.show(gallery, {
-//     Image: {
-
-//     },
-//   });
