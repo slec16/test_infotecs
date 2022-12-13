@@ -124,4 +124,10 @@ window.onload = () => {
 
   const tabsElem = document.getElementById('myTabs'); 
   new TabsManager(tabsElem);
+
+
+
+
+  // const tap = document.getElementById('foo');
+  // tap.onclick = closeNav;
 }
