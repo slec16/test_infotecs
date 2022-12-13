@@ -1,3 +1,4 @@
+// сварачивание текста
 const TogglePhrases = { 
     Collapse: 'Свернуть', 
     Expand: 'Развернуть' 
@@ -39,7 +40,7 @@ class ExpandableText {
   } 
 } 
 
-
+// табы
 
 class TabItem { 
   constructor(link, content) { 
@@ -128,6 +129,4 @@ window.onload = () => {
 
 
 
-  // const tap = document.getElementById('foo');
-  // tap.onclick = closeNav;
 }

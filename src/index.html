@@ -38,11 +38,11 @@
                         
                         <!-- Overlay content -->
                         <div class="overlay-content">
-                          <a id="foo" class="smooth-scroll" href="#services" target="_blank">Услуги и цены</a>
-                          <a id="foo" class="smooth-scroll" href="#masters" target="_blank">Мастера</a>
-                          <a id="foo" class="smooth-scroll" href="#portfolio" target="_blank">Наши работы</a>
-                          <a id="foo" class="smooth-scroll" href="#about" target="_blank">О нас</a>
-                          <a id="foo" сlass="smooth-scroll" href="#contacts" target="_blank">Контакты</a>
+                          <a id="foo" class="smooth-scroll" href="#services" >Услуги и цены</a>
+                          <a id="foo" class="smooth-scroll" href="#masters" >Мастера</a>
+                          <a id="foo" class="smooth-scroll" href="#portfolio" >Наши работы</a>
+                          <a id="foo" class="smooth-scroll" href="#about">О нас</a>
+                          <a id="foo" сlass="smooth-scroll" href="#contacts">Контакты</a>
                         </div>
                         
                     </div>
@@ -636,16 +636,16 @@
                             <li><a href="#"><img src="./images/yt.png" alt="you"></a></li>
                         </div>
                     </div>
-                    <div id="dialog-content" class="note">
+                    <form id="dialog-content" class="note">
                         <div class="note-container">
                             <p class="note-title">Быстрая запись</p>
                             <p class="note-text">Наш менеджер перезвонит в течение нескольких минут, уточнит подробности и согласует время.</p>
-                            <input class="input" type="text">
-                            <input class="input" type="tel">
-                            <button class="note-btn">Записаться</button>
+                            <input type="name" placeholder="Имя" class="input" type="text" name="name" required>
+                            <input type="tel" placeholder="+7(999)999-99-99" class="input" type="tel" name="tel" required>
+                            <button type="submit" class="note-btn">Записаться</button>
                             <p class="note-text">Нажимая на кнопку вы соглашаетесь с обработкой персональных данных</p>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </main>
@@ -680,6 +680,7 @@
     <script src="js/main.js"></script>
     <script src="js/slide.js"></script>
     <script src="js/hamb.js"></script>
+    <script src="js/sign.js"></script>
     <!-- <script src="js/record.js"></script> -->
 
 </body>
