@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    
 
 </head>
 
@@ -23,12 +24,33 @@
 
     <div class="wrapper"> 
         <header class="header">
+
+            
+
             <div class="container">
 
                 <div class="header__top">
+
+                    <div id="myNav" class="overlay">
+  
+                        <!-- Button to close the overlay navigation -->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                          <a class="smooth-scroll" href="#services" target="_blank">Услуги и цены</a>
+                          <a class="smooth-scroll" href="#masters" target="_blank">Мастера</a>
+                          <a class="smooth-scroll" href="#portfolio" target="_blank">Наши работы</a>
+                          <a class="smooth-scroll" href="#about" target="_blank">О нас</a>
+                          <a сlass="smooth-scroll" href="#contacts" target="_blank">Контакты</a>
+                        </div>
+                        
+                    </div>
+
+                    <div onclick="openNav()" class="navMenu">&#9776;</div>
+
                     <a href="/" class="header__logo">Мир красоты</a>
                     <nav class="header__navigation">
-                    
                         <ul>
                             <li><a class="smooth-scroll" href="#services">Услуги и цены</a></li>
                             <li><a class="smooth-scroll" href="#masters">Мастера</a></li>
@@ -147,384 +169,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="container">
-                <div id="services" class="price">
-                    <h2 class="price-title">Услуги и цены</h2>
-                    <div class="tabs">
-                        <nav class="price-menu">
-                            <ul class="tabs-links">
-                                 <button class="tabs-btn-active">Стрижка и укладка</button>
-                                <button class="tabs-btn">Косметология</button>
-                                <button class="tabs-btn">Маникюр и педикюр</button>
-                                <button class="tabs-btn">Макияж</button>
-                                <button class="tabs-btn">Брови и ресницы</button>
-                                <button class="tabs-btn">Массаж</button>
-                                <li>Косметология</li>
-                                <li>Маникюр и педикюр</li>
-                                <li>Макияж</li>
-                                <li>Брови и ресницы</li>
-                                <li>Массаж</li> 
-                            </ul>
-                        </nav>
-                        <div class="price-services-show">
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Женская стрижка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Стрижка бороды и усов</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Мужская стрижка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Экспресс укладка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Детский Стиль</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Укладка дневная</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Креативный Стиль</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Прическа вечерняя (свадебная)</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                        </div>
-
-                        <div class="price-services">
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">2Женская стрижка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Стрижка бороды и усов</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Мужская стрижка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Экспресс укладка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Детский Стиль</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Укладка дневная</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Креативный Стиль</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Прическа вечерняя (свадебная)</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                        </div>
-
-                        <div class="price-services">
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">3Женская стрижка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Стрижка бороды и усов</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Мужская стрижка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Экспресс укладка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Детский Стиль</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Укладка дневная</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Креативный Стиль</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Прическа вечерняя (свадебная)</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                        </div>
-
-                        <div class="price-services">
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">4Женская стрижка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Стрижка бороды и усов</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Мужская стрижка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Экспресс укладка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Детский Стиль</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Укладка дневная</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Креативный Стиль</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Прическа вечерняя (свадебная)</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                        </div>
-
-                        <div class="price-services">
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">5Женская стрижка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Стрижка бороды и усов</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Мужская стрижка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Экспресс укладка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Детский Стиль</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Укладка дневная</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Креативный Стиль</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Прическа вечерняя (свадебная)</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                        </div>
-
-                        <div class="price-services">
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">6Женская стрижка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Стрижка бороды и усов</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Мужская стрижка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Экспресс укладка</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Детский Стиль</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Укладка дневная</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Креативный Стиль</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                            <div class="price-services-unit">
-                                <div class="price-block">
-                                    <p class="price-name">Прическа вечерняя (свадебная)</p>
-                                    <p class="coast">1200 ₽</p>
-                                </div>
-                                <p class="price-text">Короткие волосы</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div> -->
-
 
 
 
@@ -905,11 +549,6 @@
             </div>
 
 
-
-
-
-
-
             <div class="masters-wrapper"> 
                 <div class="container">
                     <div id="masters" class="masters">
@@ -1040,6 +679,7 @@
     <script src="../../js/slide.js"></script> -->
     <script src="js/main.js"></script>
     <script src="js/slide.js"></script>
+    <script src="js/hamb.js"></script>
     <!-- <script src="js/record.js"></script> -->
 
 </body>
