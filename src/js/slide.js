@@ -1,4 +1,7 @@
-$(document).ready(function(){
+import $ from 'jquery'
+
+
+function init(){
     $('.works-image-block').slick({
         infinite: true,
         slidesToShow: 3,
@@ -21,5 +24,8 @@ $(document).ready(function(){
     });
     
         
-});
+}
+
+
+$(document).ready(init);
 

@@ -7,6 +7,9 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const sourcemaps = require('gulp-sourcemaps');
 
+const webpackStream = require('webpack-stream');
+const rename = require('gulp-rename');
+
 
 // Таск компиляции SASS в CSS
 function buildSass() {
@@ -40,6 +43,19 @@ function copy() {
     return src(['src/images/**/*.*'], { base: 'src' }).pipe(dest('dist'));
 }
 
+
+// Таск сборки JS
+
+function buildJs() {
+    return src('src/js/index.js')
+      .pipe(webpackStream(require('./webpack.config')))
+      .pipe(rename('main.min.js'))
+      .pipe(dest('src'))
+      .pipe(dest('dist'))
+      .pipe(browserSync.stream());
+  }
+
+
 // Таск очистки dist
 function cleanDist() {
     return src('dist', { allowEmpty: true }).pipe(clean());
@@ -48,6 +64,7 @@ function cleanDist() {
 
 // Таск отслеживания изменения файлов
 function serve() {
+    watch(['src/js/**/*.js', '!src/js/**/*.min.js'], buildJs);
     watch('src/scss/**/*.scss', buildSass);
     watch('src/**/*.html', buildHtml);
 }
@@ -65,5 +82,9 @@ exports.html = buildHtml;
 exports.copy = copy;
 exports.cleanDist = cleanDist;
 
-exports.build = series(cleanDist, buildSass, buildHtml, copy);
-exports.default = series(buildSass, parallel(createDevServer, serve));
+exports.build = series(cleanDist, buildSass, buildHtml, buildJs, copy);
+exports.default = series([buildSass, buildJs], parallel(createDevServer, serve));
+
+
+// exports.build = series(cleanDist, parallel(buildSass, buildHtml, copy, buildJs));
+// exports.default = series([buildSass, buildJs], parallel(browsersync, serve));
