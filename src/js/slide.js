@@ -1,7 +1,7 @@
 import $ from 'jquery'
 
 
-function init(){
+export function slider(){
     $('.works-image-block').slick({
         infinite: true,
         slidesToShow: 3,
@@ -27,5 +27,5 @@ function init(){
 }
 
 
-$(document).ready(init);
+// $(document).ready(init);
 
