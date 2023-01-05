@@ -1,7 +1,8 @@
 import {ExpandableText} from './ExpText'
 import {TabsManager} from './tabs'
 import {slider} from './slide'
-import {openNav, closeNav} from './hamb'
+import {hamburger} from './hamb'
+import {OrderForm} from './forms/order-form';
 
 
   
@@ -19,14 +20,8 @@ window.onload = () => {
 
   slider();
 
+  hamburger();
 
-  let openHamb = document.querySelector("[id=start]");
-  openHamb.onclick = openNav;
-
-
-  let elems = document.querySelectorAll("[id='foo']");
-  for(let i = 0; i < elems.length; i++ ){
-    elems[i].onclick = closeNav;
-  }
+  new OrderForm();
 
 }

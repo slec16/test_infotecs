@@ -23,6 +23,58 @@
 <body>
 
     <div class="wrapper"> 
+
+        
+        <div id="modal" class="modal bounceIn">
+            
+            <div class="modal_txt">
+                <div id="close_modal">+</div>
+                <div class="container">
+                    <div class="section_header">
+                        <h2 class="section__title">Записаться на услугу</h2>
+                        <p class="section__subtitle">Заполните поля</p>
+                    </div>
+                    <div class="section__inner">
+                        <form id="order-form">
+                            <div class="form__control">
+                                <label>Ваше имя:</label>
+                                <input type="name" placeholder="Имя" type="text" name="name" required>
+                            </div>
+    
+                            <div class="form__control">
+                                <label>Номер телефона:</label>
+                                <input type="tel" placeholder="+7 (___) ___-__-__"  type="tel" name="phone" inputmode="tel" required>
+                            </div>
+    
+                            <div class="form__control">
+                                <label>Выберите мастера:</label>
+                                <select name="masterId">
+                                    <option value="">Не выбран</option>
+                                </select>
+                            </div>
+    
+                            <div class="form__control">
+                                <label>Выберите услугу:</label>
+                                <select name="serviceId">
+                                    <option value="">Не выбрана</option>
+                                </select>
+                            </div>
+    
+                            <div class="form__control">
+                                <label>Выберите дату:</label>
+                                <input type="data" name="visitDate">
+                            </div>
+                            <button>Записаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+
         <header class="header">
 
             
@@ -34,7 +86,7 @@
                     <div id="myNav" class="overlay">
   
                         <!-- Button to close the overlay navigation -->
-                        <a href="javascript:void(0)" class="closebtn" >&times;</a>
+                        <a href="javascript:void(0)" id="closebtn" >&times;</a>
                         
                         <!-- Overlay content -->
                         <div class="overlay-content">
@@ -46,7 +98,6 @@
                         </div>
                         
                     </div>
-
                     <div id="start" class="navMenu">&#9776;</div>
 
                     <a href="/" class="header__logo">Мир красоты</a>
@@ -73,9 +124,7 @@
                         Идеальный образ за 60 минут
                     </p>
 
-                    <button class="smooth-scroll" href="#contacts" id="header__btn">
-                        Записаться онлайн
-                    </button>
+                    <button class="open_modal" href="#open" id="header__btn">Записаться онлайн</button>
                     
                 </div>
                 
@@ -681,6 +730,7 @@
     <script src="js/slide.js"></script> -->
     <!-- <script src="js/hamb.js"></script> -->
     <!-- <script src="js/sign.js"></script> -->
+    <script src="js/modal.js"></script>
 
     <script src="./main.min.js"></script>
 

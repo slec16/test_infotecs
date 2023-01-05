@@ -1,30 +1,34 @@
-const applicantForm = document.getElementById('dialog-content');
+/*const applicantForm = document.getElementById('dialog-content');
 applicantForm.addEventListener('submit', event => {
     event.preventDefault();
     console.log('отправка');
     serializeForm(applicantForm);
 });
 
-function serializeForm(formNode) {
-    const { elements } = formNode
+*/
 
-    const data = new FormData();
-  
-    Array.from(elements)
-    .filter((item) => !!item.name)
-    .forEach((element) => {
-      const { name, type } = element
-      const value = type === 'checkbox' ? element.checked : element.value
+// export function serializeForm(formNode) {
+//     const { elements } = formNode
 
-      data.append(name, value)
-    })
+//     const data = new FormData();
+  
+//     Array.from(elements)
+//     .filter((item) => !!item.name)
+//     .forEach((element) => {
+//       const { name, type } = element
+//       const value = type === 'checkbox' ? element.checked : element.value
 
-    console.log(Array.from(data.entries()))
+//       data.append(name, value)
+//     })
+
+//     console.log(Array.from(data.entries()))
   
-    return data;
+//     return data;
   
+// }
+  
+export function serializeForm(formNode) {
+  return new FormData(formNode);
 }
-  
-
 
 
