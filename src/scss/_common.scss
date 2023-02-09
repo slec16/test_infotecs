@@ -1,34 +1,48 @@
-html {
-    box-sizing: border-box;
+// html {
+//     box-sizing: border-box;
+// }
+
+ *, *:before, *:after {
+     box-sizing: inherit;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
+// html, body { 
+//     height: 100%;
+//     min-width: 320px;
+// }
 
-html, body { 
-    height: 100%;
-    min-width: 320px;
-}
 
-a {
-    text-decoration: none;
-}
 
-body {
-    font-family: $font;
-    font-size: 16px;
+// body {
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: 16px;
     
-}
-.container{
-    max-width: 1100px;
-    margin: auto;
-    /*padding: 0 15px;*/
-}
+// }
+// .container{
+//     max-width: 1100px;
+//     margin: auto;
+//     /*padding: 0 15px;*/
+// }
+
+
 
 .wrapper{
+    height: 100%;
+
+    margin: auto;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    
 }
 
+
+html, body {
+    height: 100%;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+main {
+    flex: 1;
+}
