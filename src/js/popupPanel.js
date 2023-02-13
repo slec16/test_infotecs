@@ -15,6 +15,7 @@ export function popupPanel() {
                 console.log(i);
                 popupWindow.style.marginTop = i*height+'px';
                 popupWindow.style.display = 'block'
+            
             }
         })
         titles[i].addEventListener("mouseout", (event) => {

@@ -12,6 +12,6 @@ export function createList(numbersOfElemtnts) {
       div.innerHTML = 'title_'+i;
       listTitle.append(div);
     }
-    popupPanel();
+    // popupPanel();
     dragDrop();
   }
