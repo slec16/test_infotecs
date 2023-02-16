@@ -33,24 +33,37 @@
             <main class="main">
                 <div class="container">
 
-                    <form id="form">
-                        <input name="description" placeholder="Введите количесвто элементов" required>
-                        <button>Добавить</button>
-                    </form>
-                    
-                    <br>
+                    <div id="loader" >Загрузка...</div>
 
-
-                    <div class="field">
-                        <div class="list_title">
-
+                    <div id="app">
+                        <div class="search-field">
+                            <!-- <button id="back">←</button> -->
+                            <form id="search">
+                                <input name="description" placeholder="Введите название" required>
+                                <button>Поиск</button>
+                            </form>
                         </div>
+                        
+                        <br>
+                        <form id="form">
+                            <input name="description" placeholder="Введите количесвто элементов" required>
+                            <button>Показать</button>
+                        </form>
+                        
+                        <br>
 
-                        <div class="pop-up">
 
-                            <div class="pop-up-panel">
-                                <!-- всплыващая панель -->
-                                <div id="loader" >Загрузка...</div>
+                        <div class="field">
+                            <div class="list_title">
+
+                            </div>
+
+                            <div class="pop-up">
+
+                                <div class="pop-up-panel">
+                                    <!-- всплыващая панель -->
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -2,8 +2,9 @@
 
 
 .title {
-    width: 95px;
-    height: 25px;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
     border: solid;
 }
 
@@ -17,8 +18,18 @@
     border: solid;
     // margin-top: 30px;
     flex-direction: column;
+    max-width: 400px;
 }
 
 .selected {
     background-color: red;
+}
+
+.search-field {
+    display: flex;
+    flex-direction: row;
+}
+
+#back {
+    margin-right: 10px;
 }

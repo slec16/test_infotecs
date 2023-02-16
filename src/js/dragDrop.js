@@ -1,6 +1,6 @@
 // const tasksListElement = document.querySelector(`.list_title`);
 // const taskElements = tasksListElement.querySelectorAll(`.title`);
-const height = 31;
+const height = 35;
 
 // for (const task of taskElements) {
 //   task.draggable = true;
@@ -66,15 +66,14 @@ export function dragDrop(){
 
             titles[i].addEventListener("mouseover", (event) => {
                 if(event.type == 'mouseover') {
-                    console.log('mouseon');
-                    console.log(i);
+                   
                     popupWindow.style.marginTop = i*height+'px';
                     popupWindow.style.display = 'block'
                 }
             })
             titles[i].addEventListener("mouseout", (event) => {
                 if(event.type == 'mouseout') {
-                    console.log('mouseoff');
+                
                     popupWindow.style.display = 'none'
                 }
             })

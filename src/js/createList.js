@@ -9,7 +9,7 @@ export function createList(numbersOfElemtnts) {
     for(let i = 1; i <= numbersOfElemtnts; i++) {
       let div = document.createElement('div');
       div.className = 'title';
-      div.innerHTML = 'title_'+i;
+      // div.innerHTML = 'title_'+i;
       listTitle.append(div);
     }
     // popupPanel();

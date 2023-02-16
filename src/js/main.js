@@ -1,11 +1,13 @@
 import { getNumber } from "./getNumber";
 import { popupPanel } from "./popupPanel";
 
-
+const bacrToList = document.getElementById('back');
 let numbersOfElemtnts = 10;
 getNumber(numbersOfElemtnts);
 
-
+// bacrToList.addEventListener("click", () => {
+//     getNumber(numbersOfElemtnts);
+// })
 
 
 
